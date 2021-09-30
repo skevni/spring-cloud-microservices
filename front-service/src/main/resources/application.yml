@@ -1,5 +1,7 @@
 server:
   port: 8802
+  servlet:
+    context-path: /
 spring:
   application:
     name: front-service-client
