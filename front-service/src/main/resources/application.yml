@@ -1,0 +1,13 @@
+server:
+  port: 8802
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: front-service-client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8801/eureka}
+  instance:
+    prefer-ip-address: true
